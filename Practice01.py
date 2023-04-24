@@ -231,10 +231,102 @@
 
 # Сумма чисел от 1 до N
 
-def sum_numbers(n):
-    summa = 0
-    for i in range(1, n + 1):
-        summa += i
-    return summa
-a = sum_numbers(5)
-print(a)
+# def sum_numbers(n, ):
+#     summa = 0
+#     for i in range(1, n + 1):
+#         summa += i
+#     return summa
+# a = sum_numbers(5)
+# print(a)
+
+# def sum_numbers(n, y = 'Helloy' ):
+#     summa = 0
+#     for i in range(1, n + 1):
+#         summa += i
+#     return summa
+# a = sum_numbers(5)
+# print(a)
+
+# # Функция для приема неограниченных параметров
+# def sum_str(*args):
+#     res = str('')
+#     for i in args:
+#         res += i
+#     return res
+
+# print(sum_str('q', 'e', 'l'))
+# print(sum_str('q', 'e', 'l', 'r', 't'))
+# # str(sum_str)
+# # print(sum_str(str(8, 9, 1)))
+
+
+# Модуль - файл с функциями
+
+# import modul    # Пример импортирования модуля с функцией
+# print(modul.max1(5,9))
+
+
+# from modul import max1  # Пример инпорта именно функции из модуля
+# print(max1(10,7))
+
+# import modul as m   # Пример сокращения именни модуля при вызове
+# print(m.max1(4,8))
+
+
+# Рекурсия: Вывод нескольких чисел Фибонначи
+
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
+
+# list_1 = []
+# for i in range(1, 10):
+#     list_1.append(fib(i))
+# print(list_1)
+
+# Алгоритм. Сортировка
+
+# # Пример быстрой сортировки
+# def quick_sort(array):
+#     if len(array) <= 1:
+#         return array
+#     else:
+#         pivot = array[0]
+#     less = [i for i in array[1:] if i <= pivot]
+#     great = [i for i in array[1:] if i > pivot]
+#     return quick_sort(less) + [pivot] + quick_sort(great)
+
+# print(quick_sort([14,5,67,9,34,5,7,8,9,]))
+# print(quick_sort([10, 7, 3, 5]))
+
+# # Пример сортировки слиянием
+
+# def merge_sort(nums):
+#     if len(nums) > 1:           # Деление списка на двое, пока не останется ниодного элемента
+#         mid = len(nums) // 2    #
+#         left = nums[:mid]       #
+#         right = nums[mid:]      #
+#         merge_sort(left)        #
+#         merge_sort(right)       #
+#         i = j = k = 0           
+#         while i < len(left) and j < len(right):     # Сравниваем значения
+#             if left[i] < right[j]:
+#                 nums[k] = left[i]
+#                 i += 1
+#             else:
+#                 nums[k] = right[j]
+#                 j += 1
+#             k += 1
+#         while i < len(left):            # Записываем значения
+#             nums[k] = left[i]
+#             i += 1
+#             k += 1
+#         while j < len(right):
+#             nums[k] = right[j]
+#             j += 1
+#             k += 1
+
+# list_1 = [1,3,5,6,2,3,5,7,9,23,89,5]
+# merge_sort(list_1)
+# print(list_1)
