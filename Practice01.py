@@ -211,18 +211,30 @@
 
 # q = set()
 
-a = {1, 2, 3, 5, 7}
-b = {2, 5, 6, 8, 12, 13}
-c = a.copy()    #Копировать значения
-print(c)
-u = a.union(b)  #Будет содержать уникальные значения обоих множеств
-print(u)
-i = a.intersection(b)   # Будет содержать общие элементы из двух списков
-print(i)
-dl = a.difference(b)    # Будет содержать элементы вычтенные множеством А от множества В
-print(dl)
-dr = b.difference(a)    # Будет содержать элементы вычтенные множеством В от множества А
-print(dr)
-q = a.union(b).difference(a.intersection(b))    #    
-print(q)
+# a = {1, 2, 3, 5, 7}
+# b = {2, 5, 6, 8, 12, 13}
+# c = a.copy()    #Копировать значения
+# print(c)
+# u = a.union(b)  #Будет содержать уникальные значения обоих множеств
+# print(u)
+# i = a.intersection(b)   # Будет содержать общие элементы из двух списков
+# print(i)
+# dl = a.difference(b)    # Будет содержать элементы вычтенные множеством А от множества В
+# print(dl)
+# dr = b.difference(a)    # Будет содержать элементы вычтенные множеством В от множества А
+# print(dr)
+# q = a.union(b).difference(a.intersection(b))    #    
+# print(q)
 
+
+#                                   Функции
+
+# Сумма чисел от 1 до N
+
+def sum_numbers(n):
+    summa = 0
+    for i in range(1, n + 1):
+        summa += i
+    return summa
+a = sum_numbers(5)
+print(a)
