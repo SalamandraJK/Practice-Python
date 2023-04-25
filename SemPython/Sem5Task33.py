@@ -11,15 +11,14 @@ n = int(input('Введите колличество оценок: '))
 for i in range(n):
     list_1.append(random.randint(1, 5))
 print(list_1)
-max_num = 5
-min_num = 5
-for i in list_1:
-    if list_1[i] < min_num:
-        min_num = list_1[i] 
-        i += 1
-    else: 
-        if list_1[i] == max_num:
-            list_1[i] = min_num
-            i += 1
+max_num = max(list_1)
+min_num = min(list_1)
+arr = 0   
+
+for i in range(n):
+    if list_1[i] == max_num:
+        list_1[i] = min_num
 
 print(list_1)
+print(f"Максимальная оценка: {max_num}")
+print(f"Минимальная оценка: {min_num}")
