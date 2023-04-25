@@ -15,10 +15,14 @@ max_num = max(list_1)
 min_num = min(list_1)
 arr = 0   
 
-for i in range(n):
-    if list_1[i] == max_num:
-        list_1[i] = min_num
+# for i in range(n):
+#     if list_1[i] == max_num:
+#         list_1[i] = min_num
 
+for i, elem in enumerate(list_1):
+    if elem == max_num:
+        list_1[i] = min_num
 print(list_1)
 print(f"Максимальная оценка: {max_num}")
 print(f"Минимальная оценка: {min_num}")
+
